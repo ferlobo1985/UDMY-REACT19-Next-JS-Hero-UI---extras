@@ -1,7 +1,9 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import "../../styles/globals.scss"
+// import "../../styles/globals.scss"
+// import "styles/global.scss"
 import {HeroUIProvider} from "@heroui/react";
+import NavComponent from '@/components/nav'
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,6 +25,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <HeroUIProvider>
+          <NavComponent/>
           {children}
         </HeroUIProvider>
        
