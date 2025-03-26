@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import "../../styles/globals.scss"
 import {HeroUIProvider} from "@heroui/react";
 
 const geistSans = Geist({
